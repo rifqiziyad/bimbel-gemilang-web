@@ -28,8 +28,9 @@ Ikuti urutan fase di `MIGRATION_PLAN.md`:
 - **Phase 4:** Implementasi Next.js + Tailwind v4 + Portal Admin
 - **Phase 5:** Verifikasi build, Playwright E2E, parity visual, keamanan, & Lighthouse (>= 95)
 
-### Aturan Hemat Token
+### Aturan Hemat Token & Git Workflow
 1. Jangan membaca seluruh file besar jika cukup menggunakan `grep`/`rg` + rentang baris.
 2. Gunakan script Node/Python di `scripts/` untuk mengekstrak konten massal dari WordPress.
 3. Simpan keputusan arsitektur di `docs/PRD.md` dan progress di `MIGRATION_PLAN.md` agar sesi baru tetap ramping.
 4. Selalu verifikasi perubahan dengan `pnpm build`, typecheck, dan test yang relevan sebelum menyatakan tugas selesai.
+5. **DILARANG AUTO GIT PUSH:** Jangan pernah menjalankan `git push` secara otomatis tanpa instruksi/izin eksplisit langsung dari user di pesan chat. Commit lokal atau perubahan file hanya boleh di-push saat user memerintahkan "git push" atau "/git-pushing".
