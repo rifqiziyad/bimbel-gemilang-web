@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment & Secrets
+.env
+.env*.local
+
+# Database & Local Uploads
+*.db
+*.sqlite
+*.sqlite3
+public/uploads/
+
+# OS & Editor
+.DS_Store
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test & Audit artifacts (large binaries/screenshots kept local unless needed)
+playwright-report/
+test-results/
+docs/audit/wp-export/
