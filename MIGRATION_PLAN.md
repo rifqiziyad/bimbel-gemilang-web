@@ -16,11 +16,11 @@
   - [x] Definisikan skema konten terstruktur (*field-based CMS*) untuk halaman publik & portal admin simpel (anti-WordPress bloat)
   - [x] Kunci arsitektur Auth, Database/ORM, Media Storage, & strategi cache/ISR (`revalidatePath`/`revalidateTag`)
   - [x] Petakan daftar migrasi data WordPress ke tabel database & daftar **301 Redirect**
-- [ ] **Phase 3 — Rekonstruksi & Modernisasi UI di FigCraft via MCP**
-  - [ ] Rekonstruksi wireframe/layout baseline web publik ke `design/bimbel-gemilang.figcraft`
-  - [ ] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft
-  - [ ] Desain UI **Portal Admin Simpel** di FigCraft (login, dashboard ringkas, form edit per-section, manajemen program/testimoni/artikel/leads)
-  - [ ] Review visual live di desktop app FigCraft hingga disetujui
+- [x] **Phase 3 — Rekonstruksi & Modernisasi UI di FigCraft via MCP**
+  - [x] Rekonstruksi wireframe/layout baseline web publik ke `design/bimbel-gemilang.figcraft`
+  - [x] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft (+ `design/tokens.css`)
+  - [x] Desain UI **Portal Admin Simpel** di FigCraft (login, dashboard ringkas, form edit per-section + fitur Draft, border indikator oranye `#F59E0B`/indigo `#2d3091`, & Preview Mode `/admin/preview`)
+  - [ ] Review visual live di desktop app FigCraft hingga disetujui user (sudah lolos inspeksi visual via screenshot render headless MCP)
 - [ ] **Phase 4 — Implementasi Aplikasi Web & Portal Admin (Next.js App Router — Opsi B)**
   - [ ] Scaffold proyek **Next.js (App Router) + React 19 + Tailwind CSS v4 + TypeScript**
   - [ ] Setup Database, ORM, skema konten, & seeding data hasil ekstraksi WordPress
