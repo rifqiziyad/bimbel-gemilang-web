@@ -7,10 +7,10 @@
   - [x] Buat `AGENTS.md` & custom skill `.agents/skills/figcraft-design-workflow/SKILL.md`
   - [x] Install paket AI Agent Skills via `npx skills add ... -a antigravity` (fokus stack **Next.js / Opsi B**)
   - [x] Install binary `figcraft` & `figcraft-cli` lalu hubungkan ke `~/.gemini/config/mcp_config.json`
-- [ ] **Phase 1 — Audit & Ekstraksi WordPress Local (LocalWP)**
-  - [ ] Inventarisasi URL publik, page builder, plugin aktif, form, & SEO metadata
-  - [ ] Ambil screenshot baseline Desktop (`1440px`) & Mobile (`390px`)
-  - [ ] Ekspor konten (WP REST API / XML / SQL) & salin `wp-content/uploads/`
+- [x] **Phase 1 — Audit & Ekstraksi WordPress Local (LocalWP)**
+  - [x] Inventarisasi URL publik, page builder, plugin aktif, form, & SEO metadata
+  - [x] Ambil screenshot baseline Desktop (`1440px`) & Mobile (`390px`)
+  - [x] Ekspor konten (WP REST API / XML / SQL) & salin `wp-content/uploads/`
 - [ ] **Phase 2 — Penyusunan PRD, Skema Konten, & Arsitektur Portal Admin**
   - [ ] Susun dokumen `docs/PRD.md` (tujuan bisnis, user persona, functional & non-functional requirements, batasan *out-of-scope*)
   - [ ] Definisikan skema konten terstruktur (*field-based CMS*) untuk halaman publik & portal admin simpel (anti-WordPress bloat)
