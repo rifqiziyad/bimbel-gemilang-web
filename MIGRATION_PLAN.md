@@ -11,11 +11,11 @@
   - [x] Inventarisasi URL publik, page builder, plugin aktif, form, & SEO metadata
   - [x] Ambil screenshot baseline Desktop (`1440px`) & Mobile (`390px`)
   - [x] Ekspor konten (WP REST API / XML / SQL) & salin `wp-content/uploads/`
-- [ ] **Phase 2 — Penyusunan PRD, Skema Konten, & Arsitektur Portal Admin**
-  - [ ] Susun dokumen `docs/PRD.md` (tujuan bisnis, user persona, functional & non-functional requirements, batasan *out-of-scope*)
-  - [ ] Definisikan skema konten terstruktur (*field-based CMS*) untuk halaman publik & portal admin simpel (anti-WordPress bloat)
-  - [ ] Kunci arsitektur Auth, Database/ORM, Media Storage, & strategi cache/ISR (`revalidatePath`/`revalidateTag`)
-  - [ ] Petakan daftar migrasi data WordPress ke tabel database & daftar **301 Redirect**
+- [x] **Phase 2 — Penyusunan PRD, Skema Konten, & Arsitektur Portal Admin**
+  - [x] Susun dokumen `docs/PRD.md` (tujuan bisnis, user persona, functional & non-functional requirements, batasan *out-of-scope*)
+  - [x] Definisikan skema konten terstruktur (*field-based CMS*) untuk halaman publik & portal admin simpel (anti-WordPress bloat)
+  - [x] Kunci arsitektur Auth, Database/ORM, Media Storage, & strategi cache/ISR (`revalidatePath`/`revalidateTag`)
+  - [x] Petakan daftar migrasi data WordPress ke tabel database & daftar **301 Redirect**
 - [ ] **Phase 3 — Rekonstruksi & Modernisasi UI di FigCraft via MCP**
   - [ ] Rekonstruksi wireframe/layout baseline web publik ke `design/bimbel-gemilang.figcraft`
   - [ ] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft
