@@ -17,7 +17,7 @@
   - [x] Kunci arsitektur Auth, Database/ORM, Media Storage, & strategi cache/ISR (`revalidatePath`/`revalidateTag`)
   - [x] Petakan daftar migrasi data WordPress ke tabel database & daftar **301 Redirect**
 - [x] **Phase 3 — Rekonstruksi & Modernisasi UI di FigCraft via MCP**
-  - [x] Rekonstruksi wireframe/layout baseline web publik ke `design/bimbel-gemilang.figcraft`
+  - [x] Rekonstruksi & kelengkapan wireframe/layout seluruh halaman WordPress (`design/bimbel-gemilang.figcraft`: 8 Desktop 1440 + 6 Mobile 390 + 5 Admin Portal, lengkap data & aset WP + perbaikan bug template)
   - [x] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft (+ `design/tokens.css`)
   - [x] Desain UI **Portal Admin Simpel** di FigCraft (login, dashboard ringkas, form edit per-section + fitur Draft, border indikator oranye `#F59E0B`/indigo `#2d3091`, & Preview Mode `/admin/preview`)
   - [ ] Review visual live di desktop app FigCraft hingga disetujui user (sudah lolos inspeksi visual via screenshot render headless MCP)
