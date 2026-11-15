@@ -80,6 +80,7 @@ Antigravity membaca skill proyek dari `.agents/skills/<nama-skill>/SKILL.md` dan
 | **Performa, SEO & CWV** | `addyosmani/web-quality-skills` (`web-quality-audit`, `core-web-vitals`, `performance`, `seo`, `accessibility`) | Standar audit Google Lighthouse untuk LCP, INP, CLS, dan struktur SEO. | Wajib |
 | **Engineering & QA** | `obra/superpowers` (`--skill systematic-debugging`, `verification-before-completion`) | Debugging sistematis berbasis akar masalah dan verifikasi ketat sebelum selesai. | Wajib |
 | **Anti-Overengineering** | `DietrichGebert/ponytail` (`--skill ponytail`) | Menjaga kode tetap minimalis, mencegah library/abstraksi berlebih, selaras dengan portal admin simpel. | Wajib |
+| **Security & Auditing** | `cloudflare/security-audit-skill` (`--skill security-audit`) | Review celah keamanan auth `/admin`, sanitasi input form, Server Actions, cookie session, dan proteksi upload media. | Wajib (Phase 4–5) |
 | **Git Workflow** | `mhattingpete/claude-skills-marketplace` (`--skill git-pushing`) | Otomatisasi staging, commit konvensional, dan push ke remote branch secara terstandar. | Wajib |
 | **E2E & Visual Testing** | `lackeyjb/playwright-skill` atau `testdino-hq/playwright-skill` | Otomatisasi Playwright untuk uji form, alur portal admin, broken links, dan screenshot parity. | Wajib |
 | **Tailwind CSS v4** | `wshobson/agents` / `evilmartians/agent-skills` (`tailwind-best-practices`) | Menjaga konfigurasi Tailwind v4 (`@theme`, design tokens, tanpa magic values). | Wajib |
