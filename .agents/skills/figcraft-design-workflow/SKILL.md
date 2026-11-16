@@ -9,8 +9,13 @@ Gunakan skill ini saat bekerja dengan file desain `design/bimbel-gemilang.figcra
 
 ## 1. Mode Koneksi FigCraft MCP
 
-- **Attached Mode (Live UI):** Pastikan aplikasi desktop FigCraft berjalan dengan flag kontrol port (`47800`) dan MCP terhubung via `--attach 47800`.
-- **Headless Mode:** MCP membaca dan menulis langsung ke root proyek ini (`design/bimbel-gemilang.figcraft`).
+- **Attached Mode (Live UI & Auto-Sync):**
+  Jalankan script launcher otomatis sebelum menghubungkan Antigravity ke MCP:
+  ```bash
+  bash scripts/open-figcraft-live.sh
+  ```
+  Script ini otomatis menjalankan `FigCraft.app` dengan flag `--control 47800`, akses read/write ke root proyek, dan langsung memuat `design/bimbel-gemilang.figcraft`. Konfigurasi MCP di `~/.gemini/antigravity/mcp_config.json` menggunakan args `["mcp", "--attach", "47800"]`.
+- **Headless Mode:** MCP membaca dan menulis langsung ke file disk proyek ini (`design/bimbel-gemilang.figcraft`) tanpa membuka jendela UI.
 
 ## 2. Struktur Canvas di `design/bimbel-gemilang.figcraft`
 
