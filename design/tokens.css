@@ -1,22 +1,45 @@
 @import "tailwindcss";
 
-/* Brand · Default */
+/* Brand · Bimbel Gemilang (Synced with design/bimbel-gemilang.figcraft) */
 @theme static {
+  /* Core Brand Colors */
   --color-indigo: #2D3091;
   --color-indigo-soft: #4E5693;
+  --color-dark-indigo: #1E1B4B;
   --color-gold: #E0C32B;
   --color-gold-light: #F4E185;
   --color-cream: #FEF4CD;
   --color-cream-soft: #FFFBEA;
   --color-teal: #035D61;
   --color-crimson: #BE1E2D;
+  --color-dark-crimson: #881337;
+
+  /* Neutrals & Typography Ink */
   --color-heading: #0F172A;
   --color-body: #364151;
   --color-muted: #64748B;
   --color-white: #FEFEFE;
   --color-bg: #F8FAFC;
   --color-border-normal: #E2E8F0;
+
+  /* Program Variant Accents (English for Kids & Program Khusus) */
+  --color-efk-yellow: #FACC15;
+  --color-teal-tint: #ECFEFF;
+  --color-indigo-tint: #EEF2FF;
+  --color-crimson-tint: #FEF2F2;
+  --color-slate-tint: #F1F5F9;
+
+  /* Admin Draft & Edit State Indicators */
   --color-draft-border: #F59E0B;
   --color-draft-bg: #FFFBEB;
   --color-edited-border: #2D3091;
+
+  /* Typography Families */
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Radius Scale */
+  --radius-card: 1rem;
+  --radius-banner: 1.5rem;
+  --radius-pill: 9999px;
 }

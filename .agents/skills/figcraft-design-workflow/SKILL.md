@@ -27,6 +27,7 @@ Pisahkan halaman/canvas menjadi area yang jelas:
 
 ## 3. Aturan Implementasi ke Next.js + Tailwind CSS v4
 
-1. Ekstrak seluruh variabel warna, font, dan spacing dari FigCraft ke blok `@theme` di CSS global Tailwind v4—hindari *arbitrary hex/px values* yang berulang.
-2. Gunakan Auto-Layout FigCraft sebagai acuan langsung untuk `flex` / `grid`, `gap`, dan `padding`.
-3. Jaga konsistensi visual antara desain FigCraft yang disetujui user dengan hasil render Playwright di Phase 5.
+1. Ekstrak seluruh variabel warna, font, dan spacing dari FigCraft ke blok `@theme` di `design/tokens.css`—hindari *arbitrary hex/px values* yang berulang.
+2. Gunakan `docs/UI_COMPONENT_SPEC.md` bersama Auto-Layout FigCraft sebagai acuan inventori komponen per halaman, variasi style tiap section, `flex` / `grid`, `gap`, dan `padding`.
+3. Jaga **100% Content Parity** antara Mobile (`390px`), Tablet (`768px`–`1023px`), dan Desktop (`1440px`) sesuai `docs/CONTENT_PARITY_GUIDELINES.md` (dilarang menghilangkan konten/data di viewport kecil maupun menengah).
+4. Jaga konsistensi visual antara desain FigCraft yang disetujui user dengan hasil render Playwright di Phase 5.

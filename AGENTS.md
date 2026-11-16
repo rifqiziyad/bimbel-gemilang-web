@@ -10,6 +10,8 @@ Dokumen aturan proyek ini dibaca oleh AI coding agent (Antigravity) di setiap se
 - **Database & ORM:** SQLite/LibSQL atau PostgreSQL + Drizzle ORM.
 - **Auth & Validasi:** Session cookie terenkripsi untuk `/admin` + Zod validation di seluruh Server Actions / API Routes.
 - **Desain UI:** `design/bimbel-gemilang.figcraft` (dikelola via FigCraft MCP).
+- **Spesifikasi Komponen & Token Visual:** Wajib merujuk [docs/UI_COMPONENT_SPEC.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/UI_COMPONENT_SPEC.md) + [design/tokens.css](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/design/tokens.css) untuk daftar section, warna/gradien, ukuran font, radius, dan perilaku komponen tiap halaman (Publik & `/admin`).
+- **Content Parity UI (Mobile, Tablet, & Desktop):** Wajib mengikuti [docs/CONTENT_PARITY_GUIDELINES.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/CONTENT_PARITY_GUIDELINES.md) — **100% konten Mobile, Tablet, dan Desktop harus sama persis**, hanya tata letak (stack/grid/carousel/drawer) yang beradaptasi tanpa menghilangkan informasi atau elemen di layar kecil/menengah.
 
 ## 2. Prinsip Arsitektur Portal Admin Simpel (Anti-WordPress)
 

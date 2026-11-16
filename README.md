@@ -8,6 +8,8 @@ Proyek migrasi Web Profile & Portal Admin Bimbel Gemilang dari WordPress lokal (
 
 - **[MIGRATION_PLAN.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/MIGRATION_PLAN.md)**: Roadmap & progress tracker seluruh fase migrasi (Phase 0 s.d. Phase 5).
 - **[docs/PRD.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/PRD.md)**: Product Requirement Document, spesifikasi fitur portal admin, dan skema data.
+- **[docs/UI_COMPONENT_SPEC.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/UI_COMPONENT_SPEC.md)**: Inventori section/komponen tiap halaman beserta spesifikasi token warna, font, gradien, dan layout.
+- **[docs/CONTENT_PARITY_GUIDELINES.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/CONTENT_PARITY_GUIDELINES.md)**: Panduan UI agar 100% konten Mobile, Tablet, & Desktop sama persis tanpa ada informasi yang dihilangkan.
 - **[AGENTS.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/AGENTS.md)**: Aturan kerja AI Coding Agent (prinsip anti-WordPress, hemat token, dan git rules).
 
 ---

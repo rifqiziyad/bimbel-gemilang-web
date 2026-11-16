@@ -24,12 +24,12 @@
 - [ ] **Phase 4 — Implementasi Aplikasi Web & Portal Admin (Next.js App Router — Opsi B)**
   - [ ] Scaffold proyek **Next.js (App Router) + React 19 + Tailwind CSS v4 + TypeScript**
   - [ ] Setup Database, ORM, skema konten, & seeding data hasil ekstraksi WordPress
-  - [ ] Konversi design tokens FigCraft ke `@theme` Tailwind v4 & bangun komponen UI web publik
+  - [ ] Konversi design tokens FigCraft ke `@theme` Tailwind v4 (`design/tokens.css`) & bangun komponen UI web publik + `/admin` sesuai `docs/UI_COMPONENT_SPEC.md` dan 100% parity konten di `docs/CONTENT_PARITY_GUIDELINES.md`
   - [ ] Implementasi **Portal Admin (`/admin`)** dengan autentikasi, editor konten berbasis form terstruktur, upload media, & on-demand revalidation
   - [ ] Migrasi seluruh konten, aset gambar teroptimasi (`next/image`), form/WhatsApp CTA, & konfigurasi `redirects` 301
 - [ ] **Phase 5 — Verifikasi Kualitas, Parity, Keamanan & Performa**
   - [ ] Verifikasi `pnpm build` & typecheck (`tsc --noEmit`) tanpa error
-  - [ ] Jalankan Playwright E2E (alur publik, submit form, & alur login/edit konten di `/admin`), link check, & visual parity check (Desktop & Mobile)
+  - [ ] Jalankan Playwright E2E (alur publik, submit form, & alur login/edit konten di `/admin`), link check, serta verifikasi 100% *content & visual parity* Mobile, Tablet (`768px`), & Desktop (`docs/CONTENT_PARITY_GUIDELINES.md`)
   - [ ] Verifikasi proteksi route `/admin`, API routes/Server Actions, & sanitasi input
   - [ ] Audit Lighthouse / Core Web Vitals halaman publik (target >= 95 di semua metrik)
 
