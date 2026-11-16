@@ -22,8 +22,8 @@ Gunakan skill ini saat bekerja dengan file desain `design/bimbel-gemilang.figcra
 Pisahkan halaman/canvas menjadi area yang jelas:
 1. **Tokens & Foundations:** Palet warna brand Bimbel Gemilang, skala tipografi, spacing, radius, dan shadow.
 2. **Components:** Button, Badge, Card Program, Card Testimoni, Accordion FAQ, Form Input, Navbar, Footer, Admin Sidebar, Admin Form Section.
-3. **Public Web — Desktop (`1440px`) & Mobile (`390px`):** Beranda, Program Bimbel, Tentang, Artikel/Blog, Kontak/Pendaftaran.
-4. **Admin Portal (`1440px` & Mobile):** Login `/admin/login`, Dashboard Ringkas, Edit Section Beranda, Kelola Program/Testimoni/FAQ, Kotak Masuk Leads.
+3. **Public Web — Desktop (`1440px`), Tablet (`768px`), & Mobile (`390px`):** Beranda, Katalog Program, PTN & TKA, Bimbel SD-SMP-SMA, English for Kids, Program Khusus, Siapa Kami, Alamat & Kontak Kami (+ Mobile/Tablet Nav Drawer).
+4. **Admin Portal (`1440px` Desktop Only):** Login `/admin/login`, Dashboard Ringkas, Editor Section (+ Draft Borders `#F59E0B`), Live Preview Mode `/admin/preview`, Kotak Masuk Leads, serta *Desktop-Only Guard* bagi layar `< 1024px`.
 
 ## 3. Aturan Implementasi ke Next.js + Tailwind CSS v4
 

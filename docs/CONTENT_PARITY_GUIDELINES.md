@@ -10,9 +10,10 @@ Dokumen ini menjadi aturan wajib bagi desainer UI dan AI coding agent (Antigravi
 2. **Dilarang Menyembunyikan Informasi per Viewport:**
    - **Dilarang** memakai `hidden md:block`, `hidden lg:block`, `max-md:hidden`, `display: none`, atau conditional render berbasis ukuran layar untuk menghapus paragraf, poin keunggulan, rincian biaya, atau item kartu di mobile maupun tablet.
    - **Dilarang** memangkas teks penting dengan `truncate` / `line-clamp-*` yang menghilangkan makna informasi penting (harga, syarat pendaftaran, nama & prodi alumni, atau alamat lengkap).
-3. **Single Source of Truth Konten:** Halaman **Desktop (`1440px`)** dan skema database di [docs/PRD.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/PRD.md) menjadi acuan penuh isi konten. Mockup Mobile di FigCraft (`03 - Public Web (Mobile 390)`) adalah acuan komposisi kartu/stacking layar kecil—**bukan** izin untuk mengurangi isi konten Desktop saat implementasi kode di Phase 4 untuk Mobile maupun Tablet.
-4. **Pengecualian Tunggal (Hanya Mekanisme Navigasi):**
-   - Bar menu horizontal desktop (`>= 1024px`) berubah menjadi tombol **Menu (`≡`) + Drawer** pada Mobile dan Tablet (`< 1024px`) agar tidak terjadi teks bertumpuk/wrap di header, namun **100% link menu** (`Home`, `Program` beserta 5 sub-halaman, `Tentang Kami` beserta 2 sub-halaman, dan tombol CTA `Konsultasi Gratis`) tetap wajib ada dan dapat diklik di dalam drawer tersebut.
+3. **Single Source of Truth Konten:** Halaman **Desktop (`1440px`)** dan skema database di [docs/PRD.md](file:///Users/rifqiziyadimtinan/Documents/Work/Bimbel%20Gemilang/bimbel-gemilang-web/docs/PRD.md) menjadi acuan penuh isi konten. Seluruh **8 Halaman Web Publik** pada **Desktop (`1440px`)**, **Tablet (`768px`)**, dan **Mobile (`390px`)** di `design/bimbel-gemilang.figcraft` wajib memiliki 100% kelengkapan section dan konten yang setara.
+4. **Pengecualian Navigasi & Akses Khusus Portal Admin:**
+   - **Navigasi Publik:** Bar menu horizontal desktop (`>= 1024px`) berubah menjadi tombol **Menu (`≡`) + Drawer** pada Mobile dan Tablet (`< 1024px`) agar tidak terjadi teks bertumpuk/wrap di header, namun **100% link menu** (`Home`, `Program` beserta 5 sub-halaman, `Tentang Kami` beserta 2 sub-halaman, dan tombol CTA `Konsultasi Gratis`) tetap wajib ada dan dapat diklik di dalam drawer tersebut.
+   - **Portal Admin (`/admin`) Khusus Desktop:** Sesuai kebijakan operasional, **Portal Admin hanya dapat dibuka melalui perangkat Desktop (`>= 1024px`)**. Pada viewport Mobile dan Tablet (`< 1024px`), `/admin` menampilkan kartu guard **Desktop-Only** agar editor konten, border Draft, dan Live Preview tetap presisi.
 
 ---
 
@@ -31,7 +32,7 @@ Gunakan pendekatan *adaptive layout* dengan Tailwind CSS v4 (mobile-first: class
 | **Kurikulum 5 Level (`English for Kids`)** | Accordion atau stacked cards berurutan; seluruh 5 level & silabus terbaca | **`md:grid-cols-2`** untuk 5 level kartu + card harga penuh di bawahnya | Grid multi-kolom lengkap 5 level (`Starter` s.d. `Higher`) + silabus |
 | **Lokasi, 6 Landmark, & Form Kontak** | Stack vertikal utuh: 3 pill kontak Teal, foto tempat bimbel, alamat, jam operasional, 6 landmark, & form | **`md:grid-cols-2`**: info lokasi + 6 landmark & kontak di satu sisi, form `Hubungi Kami` di sisi lain (3 pill kontak `md:grid-cols-3`) | 2 kolom penuh + 3 pill kontak Teal + form |
 | **Footer 3 Kolom** | `grid-cols-1 gap-6` memuat seluruh link program, alamat, kontak, & hak cipta | **`md:grid-cols-2`** atau `md:grid-cols-3` kompak agar tidak terlalu panjang | `lg:grid-cols-3` sejajar |
-| **Portal Admin (`/admin`)** | Top header + slide-over drawer; form section, border Draft (`#F59E0B`), & `Preview` / `Publish` utuh | Top action bar + collapsible/slide-over sidebar agar area editor form & preview tetap luas | Sidebar kiri tetap + top action bar + split editor/preview |
+| **Portal Admin (`/admin`)** | **Diblokir (`< 1024px`):** Menampilkan *Desktop-Only Guard Notice* & CTA kembali ke Beranda | **Diblokir (`< 1024px`):** Menampilkan *Desktop-Only Guard Notice* & CTA kembali ke Beranda | Sidebar kiri tetap + top action bar + editor Draft & Live Preview penuh |
 
 ---
 

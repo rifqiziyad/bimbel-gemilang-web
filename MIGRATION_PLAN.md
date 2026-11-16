@@ -17,9 +17,9 @@
   - [x] Kunci arsitektur Auth, Database/ORM, Media Storage, & strategi cache/ISR (`revalidatePath`/`revalidateTag`)
   - [x] Petakan daftar migrasi data WordPress ke tabel database & daftar **301 Redirect**
 - [x] **Phase 3 — Rekonstruksi & Modernisasi UI di FigCraft via MCP**
-  - [x] Rekonstruksi & kelengkapan wireframe/layout seluruh halaman WordPress (`design/bimbel-gemilang.figcraft`: 8 Desktop 1440 + 6 Mobile 390 + 5 Admin Portal, lengkap data & aset WP + perbaikan bug template)
-  - [x] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft (+ `design/tokens.css`)
-  - [x] Desain UI **Portal Admin Simpel** di FigCraft (login, dashboard ringkas, form edit per-section + fitur Draft, border indikator oranye `#F59E0B`/indigo `#2d3091`, & Preview Mode `/admin/preview`)
+  - [x] Rekonstruksi & kelengkapan wireframe/layout seluruh halaman WordPress (`design/bimbel-gemilang.figcraft`: 8 Desktop 1440 + 8 Tablet 768 + 8 Mobile 390 + 1 Nav Drawer + 5 Portal Admin Desktop-Only, 100% *content parity* & bebas bug template WP)
+  - [x] Modernisasi UI, design tokens (warna, tipografi, spacing), & komponen web publik di FigCraft (+ `design/tokens.css`, `docs/UI_COMPONENT_SPEC.md`, & `docs/CONTENT_PARITY_GUIDELINES.md`)
+  - [x] Desain UI **Portal Admin Simpel (Khusus Desktop >= 1024px)** di FigCraft (login, dashboard ringkas, editor per-section + border Draft `#F59E0B`/indigo `#2d3091`, Live Preview `/admin/preview`, & *Desktop-Only Guard* `< 1024px`)
   - [ ] Review visual live di desktop app FigCraft hingga disetujui user (sudah lolos inspeksi visual via screenshot render headless MCP)
 - [ ] **Phase 4 — Implementasi Aplikasi Web & Portal Admin (Next.js App Router — Opsi B)**
   - [ ] Scaffold proyek **Next.js (App Router) + React 19 + Tailwind CSS v4 + TypeScript**

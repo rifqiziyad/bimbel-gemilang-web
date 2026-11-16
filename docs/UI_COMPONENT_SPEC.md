@@ -132,15 +132,15 @@ Urutan section dari atas ke bawah:
 
 ---
 
-## 4. Inventori Komponen & Style Portal Admin (`/admin`)
+## 4. Inventori & Style Portal Admin (`/admin` — Khusus Desktop)
 
-Seluruh layar Admin memakai kanvas `bg-bg` (`#F8FAFC`) dan tipografi `Poppins` / `Nunito Sans`:
+Seluruh layar Admin memakai kanvas `bg-bg` (`#F8FAFC`), tipografi `Poppins` / `Nunito Sans`, dan **hanya dapat dioperasikan di perangkat Desktop (`>= 1024px`)**:
 
 1. **`AdminLoginCard` (`/admin/login`)**
    - Center card `bg-white border border-border-normal rounded-[20px] p-9` di atas `bg-bg`; input email/password + tombol login `bg-indigo text-white`.
 2. **`AdminAppShell` (`/admin/*`)**
-   - **Desktop (`>= 1024px`):** Sidebar kiri tetap `bg-dark-indigo` (`#1E1B4B`), brand `text-gold` (`#E0C32B`), item menu default `#CBD5E1`, item aktif `bg-indigo text-white rounded-[10px]`, badge counter draft pill `bg-draft-border` (`#F59E0B`).
-   - **Mobile & Tablet (`< 1024px`):** Topbar `bg-dark-indigo text-white` + tombol menu membuka slide-over drawer.
+   - **Desktop Only (`>= 1024px`):** Sidebar kiri tetap `bg-dark-indigo` (`#1E1B4B`), brand `text-gold` (`#E0C32B`), item menu default `#CBD5E1`, item aktif `bg-indigo text-white rounded-[10px]`, badge counter draft pill `bg-draft-border` (`#F59E0B`).
+   - **Mobile & Tablet Guard (`< 1024px`):** Menampilkan **`DesktopOnlyGuardCard`** (`05 - Desktop-Only Guard Notice` di FigCraft): topbar `bg-dark-indigo text-white` + badge crimson `DESKTOP ONLY` + card pesan *"Portal Admin Khusus Perangkat Desktop (>= 1024px)"* dan tombol kembali ke Beranda.
 3. **`StickyActionBar`**
    - Card atas `bg-white border border-border-normal rounded-[14px]` menampilkan judul modul, jumlah item berstatus Draft, tombol `Preview Draft` (`/admin/preview`), `Buang Draft`, `Simpan Draft`, & `Publish`.
 4. **`AdminSectionCard` & Penanda Status Visual**
@@ -151,4 +151,4 @@ Seluruh layar Admin memakai kanvas `bg-bg` (`#F8FAFC`) dan tipografi `Poppins` /
    - Top bar tetap `bg-dark-indigo text-white` berisi toggle highlight perubahan, tombol *Kembali ke Editor*, dan *Publish Sekarang*.
    - Bagian konten website yang berstatus draft disorot dengan overlay/border `border-2 border-draft-border bg-draft-bg/40` agar admin mudah membedakan mana bagian yang diedit sebelum dipublikasikan.
 6. **`AdminLeadsList` (`/admin/leads`)**
-   - Tabel pendaftar di Desktop dan stacked `bg-white border border-border-normal rounded-[14px] p-4` cards di Mobile/Tablet dengan badge status (`Baru`, `Dihubungi`, `Terdaftar`, `Arsip`) dan tombol langsung `Chat via WhatsApp`.
+   - Tabel pendaftar di layar Desktop dengan badge status (`Baru`, `Dihubungi`, `Terdaftar`, `Arsip`), filter status, dan tombol langsung `Chat via WhatsApp`.

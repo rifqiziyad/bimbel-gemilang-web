@@ -95,6 +95,7 @@ Hasil ekstraksi langsung dari tema Astra & aset visual WordPress:
 ## 6. Functional Requirements — Portal Admin Simpel (`/admin`)
 
 ### Prinsip Desain Portal Admin (Anti-WordPress)
+- **Desktop-Only Access (`>= 1024px`):** Portal Admin (`/admin/*`) dirancang **khusus untuk perangkat Desktop** (laptop/PC). Pada layar Mobile maupun Tablet (`< 1024px`), akses `/admin` menampilkan kartu pemberitahuan *Desktop-Only Guard* beserta tautan kembali ke web publik agar presisi editor konten, border Draft, dan Live Preview tetap terjaga.
 - **Structured Field-Based Editing:** Admin hanya melihat form field yang jelas labelnya (teks pendek, textarea, angka/harga, upload gambar, toggle `Aktif/Nonaktif`, tombol urutan naik/turun).
 - **Zero Layout Risk:** Admin **tidak bisa** menambah custom CSS, HTML bebas, shortcodes, atau menggeser posisi kolom/grid. Struktur visual tetap dikunci oleh komponen React + Tailwind v4.
 - **Alur Draft, Preview, & Publish:** Setiap perubahan dapat disimpan sebagai **Draft** terlebih dahulu tanpa langsung mengubah tampilan web publik. Admin dapat membuka **Preview** untuk melihat hasil tampilan asli sebelum menekan **Publish** (atau **Buang Draft** untuk membatalkan).
