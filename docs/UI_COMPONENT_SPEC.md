@@ -46,11 +46,11 @@ Dokumen ini menjadi referensi **Token-Mapped Design-to-Code** untuk Phase 4 (Nex
 3. **`CTA Banner #BimbelforGEMILANG`**
    - **Style:** Background `bg-cream-soft` (`#FFFBEA`), judul `Poppins` Bold `32px` `text-indigo`, tombol pill `rounded-full bg-indigo-soft` (`#4E5693`) `text-white`.
 4. **`AktivitasCarousel` (`Aktivitas Kami Gallery`)**
-   - **Style:** Section `bg-teal` (`#035D61`), judul `Poppins` Bold `30px` `text-white` sejajar (`justify-between`) dengan sepasang tombol panah **carousel `←` & `→`** (`rounded-full bg-white border-2 border-gold text-teal shadow-sm`).
+   - **Style:** Section `bg-teal` (`#035D61`), judul `Poppins` Bold `30px` `text-white`, **auto-slide otomatis setiap 3 detik (`3000ms`)** dengan dot indicator di bagian bawah (tanpa tombol panah/teks swipe; *pause on hover/focus*).
    - **Foto Card:** Frame rasio seragam, `rounded-[14px]`, `border-2 border-gold`.
    - **Viewport:** `1` foto (Mobile), `2` foto (Tablet), `3` foto (Desktop).
 5. **`MentorCarousel` (`Mentor Kami`)**
-   - **Style:** Section `bg-bg` (`#F8FAFC`), judul `Poppins` Bold `30px` `text-indigo` sejajar dengan tombol panah **carousel `←` & `→`** (`rounded-full bg-white border border-slate-300 text-indigo shadow-sm`).
+   - **Style:** Section `bg-bg` (`#F8FAFC`), judul `Poppins` Bold `30px` `text-indigo`, **auto-slide otomatis setiap 3 detik (`3000ms`)** dengan dot indicator di bagian bawah (tanpa tombol panah/teks swipe; *pause on hover/focus*).
    - **Mentor Card:** Avatar bulat gradien krem lembut, badge nama `bg-teal text-white font-display font-bold`, label bidang studi `text-indigo font-sans italic`.
    - **Viewport:** `1`–`2` kartu (Mobile), `2`–`3` kartu (Tablet), `4` kartu per slide (Desktop).
 
@@ -65,8 +65,8 @@ Urutan section dari atas ke bawah:
 3. **`StatsStrip`** — `bg-teal` (`#035D61`), 3 metrik sejajar (`2005` Tahun berdiri, `±5100` Alumni Gemilang, `80%` Alumni tembus PTN), angka `Poppins` Bold `text-white` / aksen `text-gold`, label kecil `text-cream-soft`.
 4. **`MengapaPilihGemilang`** — `bg-cream-soft`, heading centered `text-indigo`, 6 kartu (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3`): masing-masing `bg-white rounded-card border border-border-normal shadow-sm p-6`, judul `H3` + deskripsi `Body`.
 5. **`ProgramKamiGrid`** — `bg-white`, 4 kartu program (`grid-cols-1 md:grid-cols-2 gap-6`): `PTN & TKA`, `Bimbel SD, SMP, & SMA`, `English for Kids`, `Program Khusus` (banner gradien bebas watermark `bg-teal -> bg-dark-indigo`), + sub-catatan `Kami menyesuaikan program sesuai kebutuhan mu!...` (`18px` Bold `text-heading`).
-6. **`AktivitasCarousel`** — `bg-teal` + panah `←`/`→`.
-7. **`MentorCarousel`** — `bg-bg` + panah `←`/`→`.
+6. **`AktivitasCarousel`** — `bg-teal`, auto-slide 3 detik + dot indicator.
+7. **`MentorCarousel`** — `bg-bg`, auto-slide 3 detik + dot indicator.
 8. **`KontakAlamatSummary`** — `bg-white`, heading `text-indigo`, split 2 kolom (`md:grid-cols-2`): kiri box alamat Cirendeu + WA `0813-8523-7190`; kanan tombol CTA sosial media pill `bg-indigo text-white` (`Whatsapp`, `IG / TikTok / FB`).
 9. **`CTA #BimbelforGEMILANG`** — `bg-cream-soft`.
 10. **`Footer`** — Gradien `#FEF4CD -> #E0C32B`.

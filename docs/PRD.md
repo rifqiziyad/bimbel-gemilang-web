@@ -80,7 +80,7 @@ Hasil ekstraksi langsung dari tema Astra & aset visual WordPress:
 2. **Dynamic WhatsApp CTA Engine:**
    - Seluruh tombol `Gabung Sekarang` dan `Konsultasi Gratis` membangun link `https://wa.me/<whatsapp_number>?text=<encoded_template>` secara dinamis dari `site_settings` dan template per-program.
 3. **Interactive Carousels & Galleries:**
-   - Carousel *Mentor Kami* (mendukung swipe/panah kiri-kanan, dot indicator, responsif 1 kartu di mobile, 3 kartu di desktop).
+   - Carousel *Mentor Kami* & *Aktivitas Kami* (**auto-slide otomatis setiap 3 detik** dengan dot indicator, tanpa tombol panah/teks swipe, *pause on hover/focus*; responsif 1–2 kartu di mobile, 2–3 di tablet, 3–4 di desktop).
    - Galeri *Aktivitas Kami* (menampilkan foto kegiatan belajar dengan lightbox opsional & rasio aspek seragam agar tidak terpotong).
 4. **Form Hubungi Kami / Pendaftaran (`/alamat-kontak-kami`):**
    - Field: `Nama*` (min 2 karakter), `Nomor HP / Email*`, `Program Diminati` (dropdown opsional), `Pertanyaan / Pesan*`.

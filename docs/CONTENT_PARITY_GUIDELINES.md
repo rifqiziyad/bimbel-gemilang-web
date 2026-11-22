@@ -27,7 +27,7 @@ Gunakan pendekatan *adaptive layout* dengan Tailwind CSS v4 (mobile-first: class
 | **Hero Split** (`Beranda`, `Siapa Kami`, `PTN & TKA`) | Stack vertikal (`flex-col`), foto & seluruh 2 CTA tampil penuh | 2 kolom proporsional (`md:grid-cols-12`, copy kiri & foto kanan) atau stack lebar dengan foto penuh | 2 kolom lega (`lg:grid-cols-2`: copy kiri, visual/foto kanan) |
 | **Statistik & Keunggulan** (`2005 / ±5100 / 80%`, `Mengapa Pilih Gemilang?` 6 kartu) | `grid-cols-1` vertikal; seluruh 6 kartu & deskripsi utuh | Statistik 3 kolom kompak; Keunggulan **`md:grid-cols-2`** (3 baris x 2 kartu simetris) | Grid 3 kolom (`lg:grid-cols-3`: 2 baris x 3 kartu) |
 | **Program Kami** (4 kartu banner + teks penjelas) | `grid-cols-1` vertikal; ke-4 banner program + link route utuh | **`md:grid-cols-2`** (2x2 kartu sejajar lengkap) | Grid 2x2 (`lg:grid-cols-2`) dengan padding & spacing lega |
-| **Carousel `Aktivitas Kami` & `Mentor Kami`** | Semua item utuh via carousel (`1` foto / `1`–`2` mentor per swipe) + panah `←` `→` | **`2` foto aktivitas / `2`–`3` kartu mentor** per slide + panah `←` `→` & swipe | **`3` foto aktivitas / `4` kartu mentor** per slide + tombol panah `←` `→` |
+| **Carousel `Aktivitas Kami` & `Mentor Kami`** | Semua item utuh via carousel (`1` foto / `1`–`2` mentor) **auto-slide 3 detik** + dot indicator (tanpa panah/teks swipe) | **`2` foto aktivitas / `2`–`3` kartu mentor** per slide, **auto-slide 3 detik** + dot indicator | **`3` foto aktivitas / `4` kartu mentor** per slide, **auto-slide 3 detik** + dot indicator |
 | **Rincian Biaya (`PTN & TKA`, `SD–SMA`, `English for Kids`)** | *Stacked pricing cards* (`1` paket per kartu), seluruh harga Cash, Angsur, & biaya daftar `Rp. 150.000` utuh | **`md:grid-cols-2`** (atau tabel lega tanpa kolom terpotong) untuk membandingkan Cash vs Angsur | Grid 3 kolom / tabel penuh Cash vs Angsur |
 | **Kurikulum 5 Level (`English for Kids`)** | Accordion atau stacked cards berurutan; seluruh 5 level & silabus terbaca | **`md:grid-cols-2`** untuk 5 level kartu + card harga penuh di bawahnya | Grid multi-kolom lengkap 5 level (`Starter` s.d. `Higher`) + silabus |
 | **Lokasi, 6 Landmark, & Form Kontak** | Stack vertikal utuh: 3 pill kontak Teal, foto tempat bimbel, alamat, jam operasional, 6 landmark, & form | **`md:grid-cols-2`**: info lokasi + 6 landmark & kontak di satu sisi, form `Hubungi Kami` di sisi lain (3 pill kontak `md:grid-cols-3`) | 2 kolom penuh + 3 pill kontak Teal + form |
@@ -38,7 +38,7 @@ Gunakan pendekatan *adaptive layout* dengan Tailwind CSS v4 (mobile-first: class
 
 ## 3. Aturan Tipografi, Spacing, & Anti-Overflow (Mobile & Tablet)
 
-1. **Minimum Touch Target:** Seluruh tombol CTA, tombol panah carousel (`←`/`→`), accordion toggle, dan link menu di Mobile maupun Tablet (layar sentuh) minimal berukuran `44x44 px`.
+1. **Minimum Touch Target:** Seluruh tombol CTA, dot indicator carousel, accordion toggle, dan link menu di Mobile maupun Tablet (layar sentuh) minimal berukuran `44x44 px`.
 2. **Minimum Ukuran Font Body:** `14px`–`16px` (`text-sm` / `text-base`) untuk teks paragraf dan rincian harga agar mudah dibaca di HP maupun Tablet.
 3. **Zero Horizontal Overflow:** Pastikan pada viewport Mobile (`390px`) dan Tablet (`768px` portrait maupun `1024px` landscape), `document.documentElement.scrollWidth <= window.innerWidth` di setiap halaman. Gambar dan container panjang wajib memakai `max-w-full` / `w-full` dan teks panjang memakai `break-words`.
 
@@ -52,4 +52,4 @@ Sebelum menyelesaikan implementasi halaman di Phase 4 dan sebelum lolos audit Ph
 - [ ] **Playwright Multi-Viewport Test (`1440x900` Desktop vs `768x1024` Tablet vs `390x844` Mobile):**
   - Verifikasi teks kunci pada ke-8 rute publik (`/`, `/program`, `/ptn-tka`, `/bimbel-sd-smp-sma`, `/english-for-kids`, `/program-khusus`, `/siapa-kami`, `/alamat-kontak-kami`) sama-sama visible/accessible di Desktop, Tablet, dan Mobile.
   - Verifikasi `horizontalOverflow === false` pada lebar `390px` dan `768px`.
-  - Verifikasi kontrol carousel (`←` / `→`) di `Aktivitas Kami` dan `Mentor Kami` dapat diklik dan menggeser slide di Desktop, Tablet, maupun Mobile.
+  - Verifikasi carousel `Aktivitas Kami` dan `Mentor Kami` melakukan **auto-slide otomatis setiap 3 detik** dan dot indicator dapat diklik di Desktop, Tablet, maupun Mobile.
