@@ -13,9 +13,24 @@ Gunakan skill ini saat bekerja dengan file desain `design/bimbel-gemilang.figcra
   Jalankan script launcher otomatis sebelum menghubungkan Antigravity ke MCP:
   ```bash
   bash scripts/open-figcraft-live.sh
+  # atau jika FigCraft sudah terbuka tanpa --control:
+  bash scripts/open-figcraft-live.sh --restart
   ```
-  Script ini otomatis menjalankan `FigCraft.app` dengan flag `--control 47800`, akses read/write ke root proyek, dan langsung memuat `design/bimbel-gemilang.figcraft`. Konfigurasi MCP di `~/.gemini/antigravity/mcp_config.json` menggunakan args `["mcp", "--attach", "47800"]`.
+  Script ini otomatis menjalankan `FigCraft.app` dengan flag `--control 47800`, akses read/write ke root proyek, membuka `design/bimbel-gemilang.figcraft`, menunggu port `47800` siap, dan menampilkan jendela FigCraft ke depan. Konfigurasi MCP di `~/.gemini/antigravity/mcp_config.json` menggunakan args `["mcp", "--attach", "47800"]`.
 - **Headless Mode:** MCP membaca dan menulis langsung ke file disk proyek ini (`design/bimbel-gemilang.figcraft`) tanpa membuka jendela UI.
+
+### Wajib: Konfirmasi Awal (Klik "OK") & Eksekusi Otomatis
+1. **Tanya User Dulu Sebelum Membuka FigCraft:** Sebelum menjalankan `bash scripts/open-figcraft-live.sh` atau memulai sesi edit desain baru di `design/bimbel-gemilang.figcraft`, agent **wajib meminta konfirmasi 1 kali ke user** menggunakan `ask_question` dengan opsi tombol:
+   - `(Recommended) OK — Buka FigCraft & Eksekusi Desain`
+   - `Batal`
+   Sertakan ringkasan singkat halaman/bagian yang akan diubah agar user siap memantau jendela FigCraft.
+2. **Auto-Eksekusi Setelah Klik "OK":** Begitu user memilih **OK**, agent langsung membuka/memfokuskan FigCraft (`bash scripts/open-figcraft-live.sh`) dan mengeksekusi **seluruh perubahan desain secara beruntun sampai selesai** (pindah page, auto-zoom, edit node/layout, dan `save_file`) **tanpa berhenti lagi untuk meminta konfirmasi di tengah jalan**.
+
+### Wajib: Live Viewport Tracking (Auto-Page & Auto-Zoom) saat Mengedit
+Agar user bisa melihat perubahan desain secara **real-time** di layar FigCraft saat agent bekerja di Attached Mode:
+1. **Pindah ke Page & Node Target:** Sebelum atau saat mengedit, panggil `select` (`ids: [<targetFrameOrNodeId>]`, yang otomatis berpindah ke page node tersebut) atau `run_command` dengan `page.select` (`{"id": <pageId>}`).
+2. **Auto-Zoom ke Area yang Diedit:** Segera setelah `select` (atau setelah membuat/mengubah node), panggil `run_command` dengan `{"command": "view.zoomSelection"}` agar viewport `FigCraft.app` otomatis mengarah dan melakukan zoom tepat ke elemen/frame yang sedang diubah.
+3. **Verifikasi & Simpan:** Setelah selesai mengubah satu section/halaman, pastikan `select` + `view.zoomSelection` (atau `view.zoomFit` untuk melihat satu halaman penuh) tetap terfokus pada hasil akhir, lalu panggil `save_file` agar perubahan tersimpan ke disk.
 
 ## 2. Struktur Canvas di `design/bimbel-gemilang.figcraft`
 
